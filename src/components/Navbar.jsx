@@ -2,13 +2,17 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="bg-white shadow p-4 flex justify-between">
-            <h1 className="text-xl font-bold text-blue-600">My Portfolio</h1>
-            <div className="space-x-4">
-                <Link to="/" className="text-gray-700 hover:text-blue-600">About</Link>
-                <Link to="/projects" className="text-gray-700 hover:text-blue-600">Projects</Link>
-                <Link to="/resume" className="text-gray-700 hover:text-blue-600">Resume</Link>
-            </div>
+        <nav className="flex justify-center space-x-6 my-6">
+            <Link to="/" className="text-blue-600 hover:text-blue-800 text-lg font-medium">
+                About
+            </Link>
+            <Link to="/projects" className="text-blue-600 hover:text-blue-800 text-lg font-medium">
+                Projects
+            </Link>
+            <Link to="/resume" className="text-blue-600 hover:text-blue-800 text-lg font-medium">
+                Resume
+            </Link>
+            <div className="text-red-500 text-3xl">Is Tailwind working?</div>
         </nav>
     );
 }
